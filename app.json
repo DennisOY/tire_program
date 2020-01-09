@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/tireinfo/tireinfo",
+    "pages/index/index",
+    "pages/searchpage/searchpage",
+    "pages/tirecalculator/tirecalculator",
+    "pages/lookup/lookup",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "滚动奇迹",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/images/home_none.png",
+        "selectedIconPath": "assets/images/home.png"
+      },
+      {
+        "pagePath": "pages/lookup/lookup",
+        "text": "查询",
+        "iconPath": "assets/images/voice_none.png",
+        "selectedIconPath": "assets/images/voice.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "留言",
+        "iconPath": "assets/images/screenshot_none.png",
+        "selectedIconPath": "assets/images/screenshot.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "assets/images/me_none.png",
+        "selectedIconPath": "assets/images/me.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

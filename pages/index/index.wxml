@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="under_line"></view>
+
+<view class="weui-search-bar">
+   <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="20" color="red"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="2254518、奔驰、Cinturato P7..." value="{{searchValue}}" bindinput='searchValueInput' bindconfirm="searchConfirm" />
+      <view class="weui-icon-clear" wx:if="{{searchValue.length > 0}}" bindtap="searchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="under_line"></view>
+
+<view class="brand_container">
+  <block wx:for="{{tire_brands}}" wx:for-item="brand" wx:for-index="item_id">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{brand.name}}</text>
+      </block>
+    </view>
+  </block>
+</view>
+
+<view class="swiper_container">
+  <swiper class="swiper" circular="true" indicator-dots="true" indicator-active-color="red" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{running_pic}}" wx:for-index="index">
+      <swiper-item>
+        <image src="{{item.src}}" class="swiper_image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="picture_container">
+  <block wx:for="{{static_pic}}" wx:for-index="index">
+    <view class="static_pic_info">
+      <block>
+        <image src="{{item.src}}" class="static_pic_image" mode="cover"></image>
+        <text class="userinfo-nickname">{{item.name}}</text>
+      </block>
+    </view>
+  </block>
+</view>

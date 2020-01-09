@@ -1,0 +1,25 @@
+<!--pages/tireinfo/tireinfo.wxml-->
+<view class="swiper_container">
+  <swiper class="swiper" circular="true" indicator-dots="true" indicator-active-color="red" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{running_pic}}" wx:for-index="index">
+      <swiper-item>
+        <image src="{{item.src}}" class="swiper_image" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<block>
+  <view class="product_container">
+    
+      <text class="product_name">品牌名称： {{brand}}\n<text class="product_desc">{{model}}</text></text>
+      <text class="product_model"><text style="color:red">工厂代码： </text>{{factory_code}}
+      </text>
+      <text class="product_model"><text style="color:red">产品产地： </text>{{made_in}}</text>
+      <text class="product_model"><text style="color:red">原厂配套： </text>{{original_set}}</text>
+      <text class="product_model"><text style="color:red">前后轮胎： </text>{{tire}}</text>
+      <text class="product_model"><text style="color:red">联系我们： </text>{{contact_info}}</text>
+    
+
+  </view>
+</block>

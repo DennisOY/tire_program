@@ -1,0 +1,171 @@
+/* pages/searchpage/searchpage.wxss */
+
+.dialog-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  z-index: 9;
+  box-sizing: border-box;
+  border-top: 2rpx solid #eee;
+  background-color: white;
+}
+
+.weui-icon-search {
+  margin-right: 8px;
+  font-size: inherit;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 20rpx;
+  top: 8rpx;
+}
+
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 20px;
+  background: #eee;
+}
+
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.weui-icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 8px;
+  font-size: 0;
+}
+
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9b9b9b;
+  background: #fff;
+  line-height: 28px;
+}
+
+.top-menu {
+  display: flex;
+  position:relative;
+  height: 80rpx;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2rpx solid #ddd;
+  border-bottom: 2rpx solid #ddd;
+  font-size: 11pt;
+  color: #555;
+}
+
+.state-menu {
+  display: flex;
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  background-color: #fff;
+  font-size: 11pt;
+  color: #555;
+}
+
+.state-item {
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+  left: 5%;
+  font-size: 11pt;
+  line-height: 70rpx;
+  text-align: left;
+  border-bottom: 3rpx solid #eee;
+}
+
+.border.state-item {
+  border: 2rpx solid #c4245c;
+}
+
+.date {
+  min-width: 40%;
+  display: flex;
+  font-size: 11pt;
+  color: #bdbdbd;
+  align-items: center;
+}
+
+.date-btn {
+  min-width: 80%;
+  font-size: 12pt;
+  background-color: #c4245c;
+  color: #fff;
+}
+
+.tire_info_container {
+  display: flex;
+  flex-direction: column;
+  height: 180rpx;
+  border-bottom: 20rpx solid #eee;
+}
+
+.product_name {
+  position: relative;
+  font-size: 14pt;
+  left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 50%;
+  justify-content: center;
+}
+
+.product_model {
+  position: relative;
+  font-size: 11pt;
+  left: 5%;
+  height: 40%;
+}
+
+.product_equipment {
+  position: relative;
+  font-size: 9pt;
+  left: 5%;
+  height: 40%;
+}

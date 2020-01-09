@@ -1,0 +1,5 @@
+<scroll-view class="main_container" scroll-y>
+  <view class="content" wx:for="{{lookup_cate}}" wx:key="item">
+    <text class="text_layout">{{item.name}}</text>
+  </view>
+</scroll-view>
