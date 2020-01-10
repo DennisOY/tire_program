@@ -2,7 +2,7 @@
 <view class="weui-search-bar">
   <view class="weui-search-bar__form">
     <view class="weui-search-bar__box">
-      <icon class="weui-icon-search_in-box" type="search" size="20" color="red"></icon>
+      <icon class="weui-icon-search_in-box" type="search" size="20" color="#d81e06"></icon>
       <input type="text" class="weui-search-bar__input" placeholder="2254518、奔驰、Cinturato P7..." value="{{searchValue}}" bindinput='searchValueInput' bindconfirm="searchConfirm" />
       <view class="weui-icon-clear" wx:if="{{searchValue.length > 0}}" bindtap="searchClear">
         <icon type="clear" size="14"></icon>
@@ -13,10 +13,10 @@
 
 <view class="top-menu">
   <view bindtap="showMenuTap" data-type="1" style="color:{{color}}">属性</view>
-  <view bindtap="showMenuTap" data-type="2">倍耐我力</view>
-  <view bindtap="showMenuTap" data-type="3">横截面宽</view>
-  <view bindtap="showMenuTap" data-type="4">高宽比</view>
-  <view bindtap="showMenuTap" data-type="5">轮毂直径</view>
+  <view bindtap="showMenuTap" data-type="2" >倍耐我力</view>
+  <view bindtap="showMenuTap" data-type="3" >横截面宽</view>
+  <view bindtap="showMenuTap" data-type="4" >高宽比</view>
+  <view bindtap="showMenuTap" data-type="5" >轮毂直径</view>
 </view>
 
 <view wx:if="{{menuType==1}}" class="state-menu" style="display:{{hideview ? none : flex}}">
@@ -25,7 +25,31 @@
   <view class="state-item {{status==3?'border':''}}" bindtap="selectState" data-status="3">沙漠</view>
 </view>
 
-<view class="dialog-mask" wx:if="{{menuType==1}}" bindtap="hideMenuTap" style="display:{{hideview ? none : fixed}}"/>
+<view wx:if="{{menuType==2}}" class="state-menu" style="display:{{hideview ? none : flex}}">
+  <view class="state-item {{status==1?'border':''}}" bindtap="selectState" data-status="1">雨胎</view>
+  <view class="state-item {{status==2?'border':''}}" bindtap="selectState" data-status="2">越野</view>
+  <view class="state-item {{status==3?'border':''}}" bindtap="selectState" data-status="3">沙漠</view>
+</view>
+
+<view wx:if="{{menuType==3}}" class="state-menu" style="display:{{hideview ? none : flex}}">
+  <view class="state-item {{status==1?'border':''}}" bindtap="selectState" data-status="1">雨胎</view>
+  <view class="state-item {{status==2?'border':''}}" bindtap="selectState" data-status="2">越野</view>
+  <view class="state-item {{status==3?'border':''}}" bindtap="selectState" data-status="3">沙漠</view>
+</view>
+
+<view wx:if="{{menuType==4}}" class="state-menu" style="display:{{hideview ? none : flex}}">
+  <view class="state-item {{status==1?'border':''}}" bindtap="selectState" data-status="1">雨胎</view>
+  <view class="state-item {{status==2?'border':''}}" bindtap="selectState" data-status="2">越野</view>
+  <view class="state-item {{status==3?'border':''}}" bindtap="selectState" data-status="3">沙漠</view>
+</view>
+
+<view wx:if="{{menuType==5}}" class="state-menu" style="display:{{hideview ? none : flex}}">
+  <view class="state-item {{status==1?'border':''}}" bindtap="selectState" data-status="1">雨胎</view>
+  <view class="state-item {{status==2?'border':''}}" bindtap="selectState" data-status="2">越野</view>
+  <view class="state-item {{status==3?'border':''}}" bindtap="selectState" data-status="3">沙漠</view>
+</view>
+
+<view class="dialog-mask" wx:if="{{menuType!=0}}" bindtap="hideMenuTap" style="display:{{hideview ? none : fixed}}"/>
 
 <block wx:for="{{11}}">
   <view class="tire_info_container">

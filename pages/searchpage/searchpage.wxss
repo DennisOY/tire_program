@@ -124,21 +124,6 @@
   border: 2rpx solid #c4245c;
 }
 
-.date {
-  min-width: 40%;
-  display: flex;
-  font-size: 11pt;
-  color: #bdbdbd;
-  align-items: center;
-}
-
-.date-btn {
-  min-width: 80%;
-  font-size: 12pt;
-  background-color: #c4245c;
-  color: #fff;
-}
-
 .tire_info_container {
   display: flex;
   flex-direction: column;

@@ -1,1 +1,84 @@
 /* pages/tirecalculator/tirecalculator.wxss */
+
+page {
+  width: 100%;
+}
+
+.topmenu_container {
+  width: 100%;
+  border: 2rpx solid rgb(233, 100, 11);
+  display: flex;
+  position: relative;
+  height: 90rpx;
+  z-index: 10;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2rpx solid #ddd;
+  border-bottom: 2rpx solid #ddd;
+  font-size: 11pt;
+  color: #555;
+  box-sizing: border-box;
+}
+
+.menu_option {
+  display: flex;
+  flex-direction: row;
+  width:50%;
+  height: 100%;
+  border: 2rpx solid rgb(27, 95, 184);
+}
+
+.menu_left_text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  border: 2rpx solid green;
+  background-color: black;
+  color: white;
+}
+
+.menu_middle_text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  border: 2rpx solid green;
+}
+
+.menu_right_text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  border: 2rpx solid green;
+  background-color: #d81e06;
+  color: white;
+}
+
+.tire_container {
+  height: 40%;
+  width: 100%;
+  border: 2rpx solid green;
+}
+
+.updateinfo_container {
+  height: 20%;
+  width: 100%;
+  border: 2rpx solid green;
+}
+
+.parameter_table_container {
+  height: 20%;
+  width: 100%;
+  border: 2rpx solid green;
+}
+
+.icon_view{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height:100%;
+  width: 10%;
+}

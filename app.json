@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/tireinfo/tireinfo",
     "pages/index/index",
-    "pages/searchpage/searchpage",
+    "pages/tireinfo/tireinfo",
     "pages/tirecalculator/tirecalculator",
+    "pages/searchpage/searchpage",
     "pages/lookup/lookup",
     "pages/logs/logs"
   ],
@@ -14,30 +14,31 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "selectedColor": "#d81e06",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "assets/images/home_none.png",
-        "selectedIconPath": "assets/images/home.png"
+        "iconPath": "assets/images/icons/index.png",
+        "selectedIconPath": "assets/images/icons/index_active.png"
       },
       {
         "pagePath": "pages/lookup/lookup",
         "text": "查询",
-        "iconPath": "assets/images/voice_none.png",
-        "selectedIconPath": "assets/images/voice.png"
+        "iconPath": "assets/images/icons/search.png",
+        "selectedIconPath": "assets/images/icons/search_active.png"
       },
       {
         "pagePath": "pages/logs/logs",
         "text": "留言",
-        "iconPath": "assets/images/screenshot_none.png",
-        "selectedIconPath": "assets/images/screenshot.png"
+        "iconPath": "assets/images/icons/message.png",
+        "selectedIconPath": "assets/images/icons/message_active.png"
       },
       {
         "pagePath": "pages/logs/logs",
         "text": "我的",
-        "iconPath": "assets/images/me_none.png",
-        "selectedIconPath": "assets/images/me.png"
+        "iconPath": "assets/images/icons/user.png",
+        "selectedIconPath": "assets/images/icons/user_active.png"
       }
     ]
   },

@@ -39,7 +39,7 @@ Page({
     console.log(e.target.dataset.type)
     this.setData({
       menuType: e.target.dataset.type,
-      color:"red"
+      color:"#d81e06"
     })
   },
   //隐藏菜单栏

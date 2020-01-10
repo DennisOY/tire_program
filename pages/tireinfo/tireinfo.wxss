@@ -15,6 +15,9 @@ page {
 }
 
 .swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
   width: 95%;
   height: 100%;
@@ -22,6 +25,9 @@ page {
 }
 
 .swiper_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   border-radius: 3%;
@@ -42,7 +48,7 @@ page {
 .product_name {
   position: relative;
   font-size: 14pt;
-  background: rgb(230, 12, 59);
+  background: #d81e06;
   height: 25%;
   width: 100%;
   border-radius: 3px;
@@ -50,7 +56,7 @@ page {
   padding-top: 3%;
   justify-content: center;
   color: white;
-  border: 3rpx solid green;
+  box-sizing: border-box;
 }
 
 .product_desc {
@@ -61,15 +67,32 @@ page {
   height: 30%;
   width: 80%;
   color:#eee;
-  border: 3rpx solid green;
 }
 
 .product_model {
   display: flex;
   position: relative;
   align-items: center;
-  font-size: 10pt;
+  font-size: 9pt;
   padding-left: 3%;
+  height: 100%;
+  width: 90%;
+
+}
+
+.icon_view{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height:100%;
+  width: 10%;
+}
+
+.desc_container{
+  display: flex;
+  flex-direction: row;
   height: 15%;
-  width: 95%;
+  width: 100%;
+  box-sizing: border-box;
+
 }
