@@ -1,0 +1,14 @@
+<!--pages/message_edit/message_edit.wxml-->
+<view class="cu-form-group">
+	<input placeholder="输入问题" value="{{questionInput}}" style="text-align:center"></input>
+	<text class="cuIcon-roundclose text-gray"  bindtap="clearClick"></text>
+</view>
+<view class="cu-form-group margin-top">
+	<textarea maxlength="-1" bindinput="textareaAInput" placeholder="输入问题描述" value="{{questionDesc}}" style="height:35vh" maxlength="{{maxLength}}">
+  </textarea>
+</view>
+<view style="text-align:right;padding-right:5%;margin-top:2%">{{currentWordNumber}}/{{maxLength}}</view>
+<view class="padding flex flex-direction">
+	<button class="cu-btn bg-cyan" style="width:100%">保存</button>
+	<button class="cu-btn bg-cyan margin-tb-sm" style="width:100%">发送</button>
+</view>

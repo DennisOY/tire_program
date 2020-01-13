@@ -7,7 +7,7 @@
 		<view>{{userInfo.nickName}}</view>
 		<view class="cu-tag bg-black light sm">VIP</view>
 	</view>
-	<view class="padding-lg margin-sm radius text-xxl" style="padding-left:55%">
+	<view class="padding-lg margin-sm radius text-xxl" style="padding-left:50%">
 		<text class="cuIcon-settings text-white "></text>
 	</view>
 </view>

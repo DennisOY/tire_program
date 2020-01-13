@@ -7,6 +7,8 @@
     "pages/lookup/lookup",
     "pages/logs/logs",
     "pages/message/message",
+    "pages/message_draft/message_draft",
+    "pages/message_edit/message_edit",
     "pages/user/user"
   ],
   "window": {

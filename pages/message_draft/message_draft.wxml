@@ -1,0 +1,85 @@
+<!--pages/message_draft/message_draft.wxml-->
+<!-- <checkbox class="round"></checkbox> -->
+<view class="flex solid-bottom align-center">
+	<view class="margin-left">
+		<checkbox class="round"></checkbox>
+	</view>
+	<view class="radius">
+		<view class="cu-card article {{isCard?'no-card':''}}" style="margin-top:0">
+			<view class="cu-item" style="border-radius:0">
+				<view class="title bg-cyan">
+					<view class="flex">
+						<view class="flex-twice text-white">
+							25/45R18 安装问题
+						</view>
+						<view class="flex-sub text-lg" style="text-align:right" bindtap="toEdit">
+							<text class="cuIcon-write text-white" decode="{{true}}">&nbsp;编辑</text>
+						</view>
+					</view>
+				</view>
+				<view class="content">
+					<text class="text-black" decode="{{true}}"  class="text">
+					&emsp;&emsp;折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！CSS3是CSS（层叠样式表）技术的升级版本，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块。
+				</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view class="flex solid-bottom align-center">
+	<view class="margin-left">
+		<checkbox class="round"></checkbox>
+	</view>
+	<view class="radius">
+		<view class="cu-card article {{isCard?'no-card':''}}" style="margin-top:0">
+			<view class="cu-item" style="border-radius:0">
+				<view class="title bg-cyan">
+					<view class="flex">
+						<view class="flex-twice text-white">
+							25/45R18 安装问题
+						</view>
+						<view class="flex-sub text-lg" style="text-align:right" bindtap="toEdit">
+							<text class="cuIcon-write text-white" decode="{{true}}">&nbsp;编辑</text>
+						</view>
+					</view>
+				</view>
+				<view class="content">
+					<text class="text-black" decode="{{true}}" class="text">
+					&emsp;&emsp;折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！CSS3是CSS（层叠样式表）技术的升级版本，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块。
+				</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view class="flex solid-bottom align-center">
+	<view class="margin-left">
+		<checkbox class="round"></checkbox>
+	</view>
+	<view class="radius">
+		<view class="cu-card article {{isCard?'no-card':''}}">
+			<view class="cu-item" style="border-radius:0">
+				<view class="title bg-cyan">
+					<view class="flex">
+						<view class="flex-twice text-white">
+							25/45R18 安装问题
+						</view>
+						<view class="flex-sub text-lg" style="text-align:right" bindtap="toEdit">
+							<text class="cuIcon-write text-white" decode="{{true}}">&nbsp;编辑</text>
+						</view>
+					</view>
+				</view>
+				<view class="content">
+					<text class="text-black" decode="{{true}}" class="text">
+					&emsp;&emsp;折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！CSS3是CSS（层叠样式表）技术的升级版本，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块。
+				</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="deleteBtn">
+	<button class="bg-red lg" style="width:100%;border-radius:0">删除</button>
+</view>

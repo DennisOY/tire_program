@@ -1,0 +1,17 @@
+/* pages/message_draft/message_draft.wxss */
+.deleteBtn {
+  position: fixed;
+  width: 750rpx;
+  height: 100rpx;
+  bottom: 0rpx;
+}
+
+.text {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}

@@ -8,7 +8,6 @@ Page({
     searchValue: '',
   },
 
-  
   //搜索栏输入函数
   searchValueInput: function (e) {
     var value = e.detail.value;
@@ -17,11 +16,16 @@ Page({
     })
     console.log('你正在输入，有什么问题吗', value)
   },
+  toDraft: function () {
+    wx.navigateTo({
+      url: '../message_draft/message_draft',
+    })
+  },
   //搜索栏确认
   searchConfirm: function (e) {
-    wx.navigateTo({
-      url: '../searchpage/searchpage',
-    })
+    // wx.navigateTo({
+    //   url: '../searchpage/searchpage',
+    // })
   },
   //清除搜索栏函数
   searchClear: function (e) {
