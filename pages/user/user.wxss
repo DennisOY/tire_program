@@ -1,0 +1,5 @@
+/* pages/user/user.wxss */
+.header {
+  height: 20vh;
+  width:100%;
+}

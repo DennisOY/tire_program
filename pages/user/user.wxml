@@ -1,0 +1,34 @@
+<!--pages/user/user.wxml-->
+<view class="flex solid-bottom padding align-center bg-gradual-pink header">
+	<view class="margin-xs radius">
+		<view class="cu-avatar xl round" style="background-image:url({{userInfo.avatarUrl}});"></view>
+	</view>
+	<view class="padding-xs margin-sm radius">
+		<view>{{userInfo.nickName}}</view>
+		<view class="cu-tag bg-black light sm">VIP</view>
+	</view>
+	<view class="padding-lg margin-sm radius text-xxl" style="padding-left:55%">
+		<text class="cuIcon-settings text-white "></text>
+	</view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+	<view class="cu-item shadow">
+		<view class="title">
+			<view class="text-cut">我的服务</view>
+		</view>
+		<view class="content flex" style="text-align:center">
+			<view class="flex-sub padding-sm margin-xs radius">
+				<image src="/assets/images/user/zhuji.png" mode="widthFix" style="width:52%"></image>
+				<view>我的足迹</view>
+			</view>
+			<view class="flex-sub padding-sm margin-xs radius">
+				<image src="/assets/images/user/kefu.png" mode="widthFix" style="width:52%"></image>
+				<view>联系客服</view>
+			</view>
+			<view class="flex-sub padding-sm margin-xs radius">
+				<image src="/assets/images/user/zhinan.png" mode="widthFix" style="width:52%"></image>
+				<view>使用指南</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,81 @@
+<!--pages/message/message.wxml-->
+<view class="cu-bar bg-cyan search">
+	<view class="search-form radius">
+		<text class="cuIcon-search"></text>
+		<input type="text" placeholder="225/45R18" confirm-type="search"></input>
+	</view>
+	<view class="action">
+		<text class="cuIcon-close"></text>
+		<text>取消</text>
+	</view>
+</view>
+
+<view class="cu-card article {{isCard?'no-card':''}}" style="margin-top:0">
+	<view class="cu-item">
+		<view class="title bg-cyan">
+			<view class="flex">
+				<view class="flex-twice text-white">
+					25/45R18 安装问题
+				</view>
+				<view class="flex-sub text-xl" style="text-align:right">
+					<text class="cuIcon-attentionfill text-white" decode="{{true}}">&emsp; 321</text>
+				</view>
+			</view>
+		</view>
+		<view class="content">
+			<text class="text-black" decode="{{true}}">
+					&emsp;&emsp;折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！CSS3是CSS（层叠样式表）技术的升级版本，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块。
+				</text>
+		</view>
+	</view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+	<view class="cu-item">
+		<view class="title bg-cyan">
+			<view class="flex">
+				<view class="flex-twice text-white">
+					25/45R18 安装问题
+				</view>
+				<view class="flex-sub text-xl" style="text-align:right">
+					<text class="cuIcon-attentionfill text-white" decode="{{true}}">&emsp; 321</text>
+				</view>
+			</view>
+		</view>
+		<view class="content">
+			<text class="text-black" decode="{{true}}">
+					&emsp;&emsp;折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！CSS3是CSS（层叠样式表）技术的升级版本，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块。
+				</text>
+		</view>
+	</view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}" style="border-radius:0">
+	<view class="cu-item">
+		<view class="title bg-cyan">
+			<view class="flex">
+				<view class="flex-twice text-white">
+					25/45R18 安装问题
+				</view>
+				<view class="flex-sub text-xl" style="text-align:right">
+					<text class="cuIcon-attentionfill text-white" decode="{{true}}">&emsp; 321</text>
+				</view>
+			</view>
+		</view>
+		<view class="content">
+			<text class="text-black" decode="{{true}}">
+					&emsp;&emsp;折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！CSS3是CSS（层叠样式表）技术的升级版本，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块。
+				</text>
+		</view>
+	</view>
+</view>
+
+<view class="opIcon">
+	<view class="cu-avatar radius adddetial add_icon text-xxl">
+		<text class="cuIcon-upload text-cyan"></text>
+	</view>
+	<view class="cu-avatar radius adddetial add_icon1 text-xxl">
+		<text class="cuIcon-calendar text-cyan"></text>
+	</view>
+	<view class="cu-avatar radius adddetial add_icon2 text-xxl">
+		<text class="cuIcon-write text-cyan"></text>
+	</view>
+</view>

@@ -1,0 +1,40 @@
+/* pages/message/message.wxss */
+.add_icon {
+  position: fixed;
+  width: 90rpx;
+  height: 90rpx;
+  bottom: 250rpx;
+  right: 20rpx;
+  background: #fff;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 0rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid steelblue;
+}
+.add_icon1 {
+  position: fixed;
+  width: 90rpx;
+  height: 90rpx;
+  bottom: 130rpx;
+  right: 20rpx;
+  background: #fff;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 0rpx;
+  border: 1px solid steelblue;
+}
+.add_icon2 {
+  position: fixed;
+  width: 90rpx;
+  height: 90rpx;
+  bottom: 20rpx;
+  right: 20rpx;
+  background: #fff;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 0rpx;
+  border: 1px solid steelblue;
+}
