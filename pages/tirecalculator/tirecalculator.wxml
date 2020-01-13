@@ -1,25 +1,57 @@
 <!--pages/tirecalculator/tirecalculator.wxml-->
 <view class="topmenu_container">
   <view class="menu_option" bindtap="showMenuTap" data-type="1">
-  <text class="menu_left_text">原</text>
+    <text class="menu_left_text">原</text>
     <view class="menu_middle_text" style="color:{{color}}">轮胎规格</view>
-    <icon class="iconfont icon-xiajiantou:before"></icon>
+    <view class="menu_right_icon">
+      <icon class="iconfont icon-xiajiantou:before" size="10"></icon>
+    </view>
   </view>
   <view class="menu_option" bindtap="showMenuTap" data-type="2">
-  <text class="menu_right_text">新</text>
+    <text class="menu_right_text">新</text>
     <view class="menu_middle_text" style="color:#d81e06">轮胎规格</view>
-    <icon class="iconfont icon-xiajiantou:before" style="align-items:center;justify-content:center;color:{{color}}"></icon>
+    <view class="menu_right_icon">
+      <icon class="iconfont icon-xiajiantou:before" size="10"></icon>
+    </view>
   </view>
 </view>
 
 <view class="tire_container">
-  1
+  <view class="text_container">轮胎外径</view>
+  <view class="pic_container">
+    <view class="pic_view">
+      <image class="tire_img"></image>
+      <text class="img_desc"></text>
+    </view>
+    <view class="pic_view">
+      <image class="tire_img"></image>
+      <text class="img_desc"></text>
+    </view>
+  </view>
 </view>
 
 <view class="updateinfo_container">
-  1
+  <view class="text_container">预计更新后</view>
+  <view class="pic_container">
+    <view class="parameter_view">
+      <image class="parameter_img"></image>
+      <text>轮胎直径</text>
+      <text class="img_desc"></text>
+    </view>
+    <view class="parameter_view">
+      <image class="parameter_img"></image>
+      <text>百公里车速</text>
+      <text class="img_desc"></text>
+    </view>
+    <view class="parameter_view">
+      <image class="parameter_img"></image>
+      <text>轮胎厚度</text>
+      <text class="img_desc"></text>
+    </view>
+  </view>
 </view>
 
-<view class="icon_view">
-  <icon class="iconfont icon-xiajiantou:before"></icon>
+<view class="parameter_table_container">
+<view class="text_container" style="background-color:green">轮毂轮胎参数推荐</view>
+<view class="text_container" style="color:green;background-color:white">轮毂宽度</view>
 </view>

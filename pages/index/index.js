@@ -106,11 +106,56 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function() {
-    console.log('你点到函数里了'),
-      wx.navigateTo({
-        url: '../logs/logs'
-      })
+  bindViewTap: function(e) {
+    console.log(e)
+    var n = e.currentTarget.dataset.id;
+    switch (n) {
+      case 1:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 2:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 3:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 4:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 5:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 6:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 7:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 8:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 9:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 10:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 11:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 12:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 13:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 14:
+        console.log(e.currentTarget.dataset.id)
+        break
+      case 15:
+        console.log(e.currentTarget.dataset.id)
+        break
+    }
   },
   //搜索栏输入函数
   searchValueInput: function(e) {
@@ -118,18 +163,18 @@ Page({
     this.setData({
       searchValue: value,
     })
-    console.log('你正在输入，有什么问题吗',value)
+    console.log('你正在输入，有什么问题吗', value)
   },
   //搜索栏确认
-  searchConfirm: function(e){
+  searchConfirm: function(e) {
     wx.navigateTo({
       url: '../searchpage/searchpage',
     })
   },
   //清除搜索栏函数
-  searchClear:function(e){
+  searchClear: function(e) {
     this.setData({
-      searchValue:'',
+      searchValue: '',
     })
   },
 

@@ -17,10 +17,10 @@
 
 <view class="brand_container">
   <block wx:for="{{tire_brands}}" wx:for-item="brand" wx:for-index="item_id">
-    <view class="userinfo">
+    <view class="userinfo" >
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
       <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <image  id="{{brand.id}}" data-id="{{brand.id}}" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
         <text class="userinfo-nickname">{{brand.name}}</text>
       </block>
     </view>

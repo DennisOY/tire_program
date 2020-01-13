@@ -21,11 +21,8 @@ Page({
     hasUserInfo: false,
   },
   //事件处理函数
-  bindViewTap: function() {
-    console.log('你点到函数里了'),
-      wx.navigateTo({
-        url: '../logs/logs'
-      })
+  bindViewTap: function(e) {
+    console.log(e)
   },
   onLoad: function() {
     if (app.globalData.userInfo) {
