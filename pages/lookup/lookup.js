@@ -39,7 +39,7 @@ Page({
       case '3':
         console.log(n);
         wx.navigateTo({
-          url: '../tireinfo/tireinfo',
+          url: '../searchpage/searchpage',
         })
         break;
       case '4':

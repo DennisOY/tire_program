@@ -1,57 +1,79 @@
 <!--pages/tirecalculator/tirecalculator.wxml-->
 <view class="topmenu_container">
-  <view class="menu_option" bindtap="showMenuTap" data-type="1">
+  <view class="menu_option">
     <text class="menu_left_text">原</text>
-    <view class="menu_middle_text" style="color:{{color}}">轮胎规格</view>
+    <view class="menu_middle_text" bindtap="showMenuTap" data-type="1">{{left_option}}</view>
     <view class="menu_right_icon">
-      <icon class="iconfont icon-xiajiantou:before" size="10"></icon>
+      <icon class="iconfont icon-xiajiantou:before" style="font-size:10px;display:flex;justify-content: center"></icon>
     </view>
   </view>
-  <view class="menu_option" bindtap="showMenuTap" data-type="2">
+  <view class="menu_option">
     <text class="menu_right_text">新</text>
-    <view class="menu_middle_text" style="color:#d81e06">轮胎规格</view>
+    <view class="menu_middle_text" bindtap="showMenuTap" data-type="2">{{right_option}}</view>
     <view class="menu_right_icon">
-      <icon class="iconfont icon-xiajiantou:before" size="10"></icon>
+      <icon class="iconfont icon-xiajiantou:before" style="font-size:10px;display:flex;justify-content: center"></icon>
     </view>
   </view>
 </view>
+
+<view wx:if="{{menuType==1}}" class="state-menu" style="display:{{hideview ? none : flex}}">
+  <view class="state-item {{status==1?'border':''}}" bindtap="selectState" data-status="1">225/45 R 18</view>
+  <view class="state-item {{status==2?'border':''}}" bindtap="selectState" data-status="2">230/50 R 19</view>
+  <view class="state-item {{status==3?'border':''}}" bindtap="selectState" data-status="3">235/55 R 20</view>
+  <view class="state-item {{status==4?'border':''}}" bindtap="selectState" data-status="0">清除</view>
+</view>
+
+<view wx:if="{{menuType==2}}" class="state-menu" style="display:{{hideview ? none : flex}}">
+  <view class="state-item {{status==1?'border':''}}" bindtap="selectState" data-status="4">255/40 R 18</view>
+  <view class="state-item {{status==2?'border':''}}" bindtap="selectState" data-status="5">260/45 R 19</view>
+  <view class="state-item {{status==3?'border':''}}" bindtap="selectState" data-status="6">265/50 R 20</view>
+  <view class="state-item {{status==4?'border':''}}" bindtap="selectState" data-status="0">清除</view>
+</view>
+
+<view class="dialog-mask" wx:if="{{menuType!=0}}" bindtap="hideMenuTap" style="display:{{hideview ? none : fixed}}" />
 
 <view class="tire_container">
-  <view class="text_container">轮胎外径</view>
-  <view class="pic_container">
-    <view class="pic_view">
-      <image class="tire_img"></image>
-      <text class="img_desc"></text>
+  <view wx:if="{{leftdataselect!=0 && rightdataselect!=0}}" class="text_container" style="background-color:#d81e06">轮胎外径</view>
+  <view wx:else class="text_container">轮胎外径</view>
+  <view class=" pic_container ">
+    <view class="pic_view ">
+      <image class="tire_img "></image>
+      <text wx:if="{{leftdataselect!=0 && rightdataselect!=0}}" class="img_desc" style="background-color:black"></text>
+      <text wx:else class="img_desc"></text>
     </view>
-    <view class="pic_view">
-      <image class="tire_img"></image>
-      <text class="img_desc"></text>
+    <view class="pic_view ">
+      <image class="tire_img "></image>
+      <text wx:if="{{leftdataselect!=0 && rightdataselect!=0}}" class="img_desc" style="background-color:#d81e06"></text>
+      <text wx:else class=" img_desc "></text>
     </view>
   </view>
 </view>
 
-<view class="updateinfo_container">
-  <view class="text_container">预计更新后</view>
-  <view class="pic_container">
-    <view class="parameter_view">
-      <image class="parameter_img"></image>
+<view class="updateinfo_container ">
+  <view wx:if="{{leftdataselect!=0 && rightdataselect!=0}}" class="text_container" style="background-color:#d81e06">预计更新后</view>
+  <view wx:else class="text_container">预计更新后</view>
+  <view class="pic_container ">
+    <view class="parameter_view ">
+      <image class="parameter_img "></image>
       <text>轮胎直径</text>
-      <text class="img_desc"></text>
+      <text wx:if="{{leftdataselect!=0 && rightdataselect!=0}}" class="img_desc" style="border: 2rpx solid #d81e06"></text>
+      <text wx:else class="img_desc"></text>
     </view>
-    <view class="parameter_view">
+    <view class="parameter_view ">
       <image class="parameter_img"></image>
       <text>百公里车速</text>
-      <text class="img_desc"></text>
+      <text wx:if="{{leftdataselect!=0 && rightdataselect!=0}}" class="img_desc" style="border: 2rpx solid #d81e06"></text>
+      <text wx:else class="img_desc "></text>
     </view>
-    <view class="parameter_view">
-      <image class="parameter_img"></image>
+    <view class="parameter_view ">
+      <image class="parameter_img "></image>
       <text>轮胎厚度</text>
-      <text class="img_desc"></text>
+      <text wx:if="{{leftdataselect!=0 && rightdataselect!=0}}" class="img_desc" style="border: 2rpx solid #d81e06"></text>
+      <text wx:else class="img_desc"></text>
     </view>
   </view>
 </view>
 
-<view class="parameter_table_container">
-<view class="text_container" style="background-color:green">轮毂轮胎参数推荐</view>
-<view class="text_container" style="color:green;background-color:white">轮毂宽度</view>
+<view class="parameter_table_container ">
+  <table />
 </view>

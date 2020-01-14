@@ -2,7 +2,6 @@
 //获取应用实例
 const app = getApp()
 var searchValue = ''
-
 Page({
   data: {
     tire_brands: [{
@@ -85,18 +84,21 @@ Page({
         src: '../../assets/images/pic2.jpg'
       }
     ],
-
     static_pic: [{
         name: '车型数据',
-        src: '../../assets/images/pic1.png'
+        src: '../../assets/images/pic1.png',
+        id:'1'
       },
       {
         name: '轮胎计算器',
         src: '../../assets/images/pic2.jpg'
+        ,
+        id: '2'
       },
       {
         name: '轮胎数据',
-        src: '../../assets/images/pic3.jpg'
+        src: '../../assets/images/pic3.jpg',
+        id: '3'
       }
     ],
 
@@ -204,7 +206,29 @@ Page({
         break;
     }
   },
-
+  bindStaticPicTap: function (e) {
+    console.log(e);
+    var n = e.currentTarget.dataset.id;
+    switch (n) {
+      case '1':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '2':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tirecalculator/tirecalculator',
+        })
+        break;
+      case '3':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+    }
+  },
   onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({

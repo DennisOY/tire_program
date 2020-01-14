@@ -30,7 +30,7 @@
   <block wx:for="{{static_pic}}" wx:for-index="index">
     <view class="static_pic_info">
       <block>
-        <image src="{{item.src}}" class="static_pic_image" mode="cover"></image>
+        <image data-id="{{item.id}}" src="{{item.src}}" bindtap="bindStaticPicTap" class="static_pic_image" mode="cover"></image>
         <text class="userinfo-nickname">{{item.name}}</text>
       </block>
     </view>

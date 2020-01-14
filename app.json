@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/tirecalculator/tirecalculator",
     "pages/index/index",
     "pages/tireinfo/tireinfo",
-    "pages/tirecalculator/tirecalculator",
+    
     "pages/searchpage/searchpage",
     "pages/lookup/lookup",
     "pages/logs/logs",

@@ -16,7 +16,7 @@ Page({
   
   //展示菜单栏
   showMenuTap: function(e) {
-    console.log(e.target.dataset.type)
+    console.log(e.target)
     this.setData({
       menuType: e.target.dataset.type,
       color:"#d81e06"
@@ -28,6 +28,13 @@ Page({
     this.setData({
       menuType: 0,
       color:"#555"
+    })
+  },
+
+  bindTapView: function(e){
+    console.log(e)
+    wx.navigateTo({
+      url: '../tireinfo/tireinfo',
     })
   },
 

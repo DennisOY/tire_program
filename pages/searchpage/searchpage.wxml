@@ -42,10 +42,10 @@
 <view class="dialog-mask" wx:if="{{menuType!=0}}" bindtap="hideMenuTap" style="display:{{hideview ? none : fixed}}"/>
 
 <block wx:for="{{11}}">
-  <view class="tire_info_container">
+  <view class="tire_info_container" bindtap="bindTapView">
     <text class="product_name">{{name}}</text>
     <text class="product_model">{{model}} {{series}} {{ratio}}</text>
-    <text class="product_equipment">原厂配套: {{equipment}}</text>
+    <text class="product_equipment" style="color:#d81e06">原厂配套: <text style="color:black">{{equipment}}</text></text>
   </view>
 </block>
 
