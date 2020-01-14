@@ -1,5 +1,7 @@
 <scroll-view class="main_container" scroll-y>
-  <view class="content" bindtap="bindViewTap" wx:for="{{lookup_cate}}" wx:key="item">
-    <text class="text_layout">{{item.name}}</text>
-  </view>
+  <block wx:for="{{lookup_cate}}" wx:for-item="lookup" wx:key="item_id">
+    <view class="content" id="{{lookup.id}}" bindtap="bindViewTap">
+      <text class="text_layout">{{lookup.name}}</text>
+    </view>
+  </block>
 </scroll-view>

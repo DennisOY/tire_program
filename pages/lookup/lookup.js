@@ -6,23 +6,52 @@ Page({
   data: {
     lookup_cate: [{
       name: '车型数据',
-      id : 1,
+      id: 1,
     }, {
-        name: '轮胎计算器',
-        id : 2,
-      }, {
-        name: '轮胎数据',
-        id : 3,
-      }, {
-        name: '汽车小知识',
-        id : 4,
-      }, ],
+      name: '轮胎计算器',
+      id: 2,
+    }, {
+      name: '轮胎数据',
+      id: 3,
+    }, {
+      name: '汽车小知识',
+      id: 4,
+    }, ],
     userInfo: {},
     hasUserInfo: false,
   },
   //事件处理函数
   bindViewTap: function(e) {
-    console.log(e)
+    var n = e.target.id;
+    switch (n) {
+      case '1':
+        console.log(n);
+        wx.navigateTo({
+          url: '../logs/logs',
+        })
+        break;
+      case '2':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tirecalculator/tirecalculator',
+        })
+        break;
+      case '3':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '4':
+        console.log(n);
+        wx.navigateTo({
+          url: '../logs/logs',
+        })
+        break;
+      default:
+        console.log(n);
+        break;
+    }
   },
   onLoad: function() {
     if (app.globalData.userInfo) {

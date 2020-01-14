@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="under_line"></view>
 
-<view class="weui-search-bar">
+<!-- <view class="weui-search-bar">
    <view class="weui-search-bar__form">
     <view class="weui-search-bar__box">
       <icon class="weui-icon-search_in-box" type="search" size="20" color="#d81e06"></icon>
@@ -11,7 +11,9 @@
       </view>
     </view>
   </view>
-</view>
+</view> -->
+
+<searchbar />
 
 <view class="under_line"></view>
 
@@ -20,7 +22,7 @@
     <view class="userinfo" >
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
       <block wx:else>
-        <image  id="{{brand.id}}" data-id="{{brand.id}}" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <image  id="{{brand.id}}" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
         <text class="userinfo-nickname">{{brand.name}}</text>
       </block>
     </view>

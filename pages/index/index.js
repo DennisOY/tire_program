@@ -107,54 +107,101 @@ Page({
   },
   //事件处理函数
   bindViewTap: function(e) {
-    console.log(e)
-    var n = e.currentTarget.dataset.id;
+    var n = e.target.id;
     switch (n) {
-      case 1:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 2:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 3:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 4:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 5:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 6:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 7:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 8:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 9:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 10:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 11:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 12:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 13:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 14:
-        console.log(e.currentTarget.dataset.id)
-        break
-      case 15:
-        console.log(e.currentTarget.dataset.id)
-        break
+      case '1':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '2':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '3':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '4':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '5':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '6':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '7':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '8':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '9':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '10':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '11':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '12':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '13':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '14':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      case '15':
+        console.log(n);
+        wx.navigateTo({
+          url: '../tireinfo/tireinfo',
+        })
+        break;
+      default:
+        console.log(n);
+        break;
     }
   },
   //搜索栏输入函数
