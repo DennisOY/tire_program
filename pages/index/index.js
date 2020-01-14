@@ -204,26 +204,6 @@ Page({
         break;
     }
   },
-  //搜索栏输入函数
-  searchValueInput: function(e) {
-    var value = e.detail.value;
-    this.setData({
-      searchValue: value,
-    })
-    console.log('你正在输入，有什么问题吗', value)
-  },
-  //搜索栏确认
-  searchConfirm: function(e) {
-    wx.navigateTo({
-      url: '../searchpage/searchpage',
-    })
-  },
-  //清除搜索栏函数
-  searchClear: function(e) {
-    this.setData({
-      searchValue: '',
-    })
-  },
 
   onLoad: function() {
     if (app.globalData.userInfo) {

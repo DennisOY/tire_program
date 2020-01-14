@@ -1,20 +1,7 @@
 <!--index.wxml-->
+
 <view class="under_line"></view>
-
-<!-- <view class="weui-search-bar">
-   <view class="weui-search-bar__form">
-    <view class="weui-search-bar__box">
-      <icon class="weui-icon-search_in-box" type="search" size="20" color="#d81e06"></icon>
-      <input type="text" class="weui-search-bar__input" placeholder="2254518、奔驰、Cinturato P7..." value="{{searchValue}}" bindinput='searchValueInput' bindconfirm="searchConfirm" />
-      <view class="weui-icon-clear" wx:if="{{searchValue.length > 0}}" bindtap="searchClear">
-        <icon type="clear" size="14"></icon>
-      </view>
-    </view>
-  </view>
-</view> -->
-
 <searchbar />
-
 <view class="under_line"></view>
 
 <view class="brand_container">

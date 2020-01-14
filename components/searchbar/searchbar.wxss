@@ -8,6 +8,7 @@
   display: flex;
   box-sizing: border-box;
   background-color: white;
+  z-index: 15;
 }
 .weui-icon-search {
   margin-right: 8px;

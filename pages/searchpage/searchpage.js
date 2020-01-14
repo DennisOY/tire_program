@@ -13,27 +13,7 @@ Page({
     ratio: "95Y",
     equipment: "宝马_新3系_前/全轮位",
   },
-
-  //搜索栏输入函数
-  searchValueInput: function(e) {
-    var value = e.detail.value;
-    this.setData({
-      searchValue: value,
-    })
-    console.log('你正在输入，有什么问题吗', value)
-  },
-  //搜索栏确认
-  searchConfirm: function(e) {
-    wx.navigateTo({
-      //跳转界面
-    })
-  },
-  //清除搜索栏函数
-  searchClear: function(e) {
-    this.setData({
-      searchValue: '',
-    })
-  },
+  
   //展示菜单栏
   showMenuTap: function(e) {
     console.log(e.target.dataset.type)
