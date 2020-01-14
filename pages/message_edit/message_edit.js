@@ -34,7 +34,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if (options.type != null && options.type === 'new') {
+      this.setData({
+        questionInput: "",
+        questionDesc: "",
+        maxLength: 500,
+        currentWordNumber: 0
+      });
+    }
   },
 
   /**

@@ -21,6 +21,14 @@ Page({
       url: '../message_draft/message_draft',
     })
   },
+  toEdit: function (e) {
+    let type= e.currentTarget.dataset.type;
+    if(type!=null && type==='edit') {
+      wx.navigateTo({
+        url: '../message_edit/message_edit?type=new',
+      })
+    }
+  },
   //搜索栏确认
   searchConfirm: function (e) {
     // wx.navigateTo({

@@ -9,7 +9,7 @@ Page({
   },
   toEdit: function () {
     wx.navigateTo({
-      url: '../message_edit/message_edit'
+      url: '../message_edit/message_edit?type=update'
     })
   },
   /**

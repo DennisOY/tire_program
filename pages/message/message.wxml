@@ -82,10 +82,10 @@
 	<view class="cu-avatar radius adddetial add_icon text-xxl">
 		<text class="cuIcon-upload text-cyan"></text>
 	</view>
-	<view class="cu-avatar radius adddetial add_icon1 text-xxl">
+	<view class="cu-avatar radius adddetial add_icon1 text-xxl" bindtap="toDraft">
 		<text class="cuIcon-calendar text-cyan"></text>
 	</view>
-	<view class="cu-avatar radius adddetial add_icon2 text-xxl" bindtap="toDraft">
+	<view class="cu-avatar radius adddetial add_icon2 text-xxl" bindtap="toEdit" data-type="edit">
 		<text class="cuIcon-write text-cyan"></text>
 	</view>
 </view>
