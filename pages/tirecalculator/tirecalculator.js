@@ -1,4 +1,5 @@
 // pages/tirecalculator/tirecalculator.js
+const app = getApp()
 Page({
 
   /**
@@ -9,20 +10,49 @@ Page({
     rightdataselect: "0",
     leftdataselect: "0",
     left_option: "轮胎规格",
-    right_option: "轮胎规格"
+    right_option: "轮胎规格",
+    hiddenLeftCate:true,
+    hiddenRightCate:true,
+    previous_data:0,
+    current_data:0,
+    tire_diameter:0,
+    car_speed:0,
+    tire_thickness:0,
+    title: "轮毂轮胎参数推荐表",
+    subtitle: [["轮毂宽度"], ["可选范围"], ["最佳胎宽"]],
+    listData: [
+      { "code": "5.5J", "text": "175-195", "type": "185" },
+      { "code": "6.0J", "text": "185-205", "type": "195" },
+      { "code": "6.5J", "text": "195-215", "type": "205" }
+    ]
   },
 
-  //展示菜单栏
-  showMenuTap: function(e) {
+  //展示左菜单栏
+  showLeftMenuTap: function(e) {
     this.setData({
       menuType: e.target.dataset.type,
+      hiddenLeftCate:!this.data.hiddenLeftCate,
+      hiddenRightCate:true,
       color: "#d81e06"
     })
   },
+  //展示右菜单栏
+  showRightMenuTap: function (e) {
+    this.setData({
+      menuType: e.target.dataset.type,
+      hiddenRightCate: !this.data.hiddenRightCate,
+      hiddenLeftCate:true,
+      color: "#d81e06"
+    })
+  },
+
   //隐藏菜单栏
   hideMenuTap: function(e) {
+    console.log('1')
     this.setData({
-      menuType: "0",
+      menuType: 0,
+      hiddenLeftCate: true,
+      hiddenRightCate: true,
       color: "#555"
     })
   },

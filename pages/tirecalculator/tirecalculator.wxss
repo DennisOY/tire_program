@@ -42,7 +42,7 @@ page {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 80%;
 }
 
 .menu_right_text {
@@ -56,6 +56,8 @@ page {
 
 .menu_right_icon {
   display: flex;
+  position: relative;
+  right: 0%;
   align-items: center;
   justify-content: center;
   width: 15%;
@@ -73,11 +75,12 @@ page {
   background-color: #fff;
   font-size: 11pt;
   color: #555;
+  box-sizing: border-box;
 }
 
 .state-item {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 80rpx;
   left: 5%;
   font-size: 11pt;
@@ -135,10 +138,8 @@ page {
 }
 
 .tire_img{
-  width: 60%;
-  height:60%;
-  border: 2rpx solid yellow;
-  margin-bottom: 10%;
+  width: 80%;
+  height:70%;
 }
 
 .parameter_view {
@@ -153,12 +154,15 @@ page {
 
 .parameter_img{
   width: 50%;
-  height:40%;
-  border: 2rpx solid yellow;
+  height:45%;
 }
 
 .img_desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  color: snow;
   width: 150rpx;
   height: 50rpx;
   border: 2rpx solid #ddd;

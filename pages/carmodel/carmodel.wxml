@@ -1,21 +1,34 @@
-<!--components/table.wxml-->
+<!--pages/carmodel/carmodel.wxml-->
+<view class="under_line" />
+<searchbar />
+<view class="under_line" />
+
+<text class="title_text">{{title_text}}</text>
+<block wx:for="{{3}}">
 <view class="table">
-  <view class="tr bg-gr">{{title}}</view>
+  <view class="tr-left bg-gr">{{title}}</view>
   <view class="tr bg-w">
     <view class="th">{{subtitle[0]}}</view>
     <view class="th">{{subtitle[1]}}</view>
     <view class="th">{{subtitle[2]}}</view>
+    <view class="th">{{subtitle[3]}}</view>
+    <view class="th">{{subtitle[4]}}</view>
   </view>
   <block wx:for="{{listData}}" wx:key="{{code}}">
     <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
       <view class="td">{{item.code}}</view>
       <view class="td">{{item.text}}</view>
       <view class="td">{{item.type}}</view>
+      <view class="td">{{item.size}}</view>
+      <view class="td">{{item.distance}}</view>
     </view>
     <view class="tr" wx:else>
       <view class="td">{{item.code}}</view>
       <view class="td">{{item.text}}</view>
       <view class="td">{{item.type}}</view>
+      <view class="td">{{item.size}}</view>
+      <view class="td">{{item.distance}}</view>
     </view>
   </block>
 </view>
+</block>
