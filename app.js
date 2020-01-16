@@ -27,6 +27,15 @@ App({
               if (this.userInfoReadyCallback) {
                 this.userInfoReadyCallback(res)
               }
+
+              this.globalData.StatusBar = res.statusBarHeight;
+              let capsule = wx.getMenuButtonBoundingClientRect();
+              if (capsule) {
+                this.globalData.Custom = capsule;
+                this.globalData.CustomBar = capsule.bottom + capsule.top - res.statusBarHeight;
+              } else {
+                this.globalData.CustomBar = res.statusBarHeight + 50;
+              }
             }
           })
         }

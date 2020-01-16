@@ -5,7 +5,7 @@
 <view class="under_line"></view>
 
 <view class="brand_container">
-  <block wx:for="{{tire_brands}}" wx:for-item="brand" wx:for-index="item_id">
+  <block wx:for="{{tire_brands}}" wx:for-item="brand" wx:for-index="item_id" wx:key="unique">
     <view class="userinfo" >
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
       <block wx:else>
@@ -18,7 +18,7 @@
 
 <view class="swiper_container">
   <swiper class="swiper" circular="true" indicator-dots="true" indicator-active-color="#d81e06" autoplay="true" interval="5000" duration="1000">
-    <block wx:for="{{running_pic}}" wx:for-index="index">
+    <block wx:for="{{running_pic}}" wx:for-index="index" wx:key="unique">
       <swiper-item>
         <image src="{{item.src}}" class="swiper_image"></image>
       </swiper-item>
@@ -27,7 +27,7 @@
 </view>
 
 <view class="picture_container">
-  <block wx:for="{{static_pic}}" wx:for-index="index">
+  <block wx:for="{{static_pic}}" wx:for-index="index" wx:key="unique">
     <view class="static_pic_info">
       <block>
         <image data-id="{{item.id}}" src="{{item.src}}" bindtap="bindStaticPicTap" class="static_pic_image" mode="cover"></image>

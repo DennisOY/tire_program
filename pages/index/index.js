@@ -32,7 +32,7 @@ Page({
       {
         name: '普利司通',
         id: 6,
-        src: '../../assets/images/tire_brand_logo/BRANDlogo_bridegestone_tire.png'
+        src: '../../assets/images/tire_brand_logo/BRANDlogo_bridgestone_tire.png'
       },
       {
         name: '横滨',
@@ -227,7 +227,7 @@ Page({
       case '1':
         console.log(n);
         wx.navigateTo({
-          url: '../carmodel/carmodel',
+          url: '../carType/carType',
         })
         break;
       case '2':

@@ -1,0 +1,15 @@
+<!--components/carSeriesPicker/carSeriesPicker.wxml-->
+<view  wx:if="{{showDialog}}">
+	<view class="flex bg-red p-xs mb-sm text-center text-df">
+		<view class="flex-sub padding-sm margin-xs"><text bindtap="selectOk">选择年份</text></view>
+		<view class="flex-treble padding-sm margin-xs">{{serises}}</view>
+		<view class="flex-sub padding-sm margin-xs"><text bindtap="cancel">取消</text></view>
+	</view>
+	<picker-view bindchange="change" class='pickerView' indicator-style="height: 50px;" style="width: 100%; height: 220px;">
+		<picker-view-column>
+			<view wx:for="{{years}}" wx:key="index" wx:key="unique" wx:for-index="index" wx:key wx:for-item="item" style="line-height: 50px;text-align:center">
+				{{item}}
+			</view>
+		</picker-view-column>
+	</picker-view>
+</view>

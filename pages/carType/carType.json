@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "MyPicker":"/components/carSeriesPicker/carSeriesPicker"
+  }
+}

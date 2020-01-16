@@ -10,7 +10,8 @@
     "pages/message/message",
     "pages/message_draft/message_draft",
     "pages/message_edit/message_edit",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/carType/carType"
   ],
   "window": {
     "backgroundTextStyle": "light",

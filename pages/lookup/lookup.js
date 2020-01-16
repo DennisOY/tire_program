@@ -27,7 +27,7 @@ Page({
       case '1':
         console.log(n);
         wx.navigateTo({
-          url: '../carmodel/carmodel',
+          url: '../carType/carType',
         })
         break;
       case '2':

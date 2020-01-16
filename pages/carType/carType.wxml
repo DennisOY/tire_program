@@ -1,0 +1,83 @@
+<!--pages/carType/carType.wxml-->
+<view class="weui-search-bar">
+	<view class="weui-search-bar__form">
+		<view class="weui-search-bar__box">
+			<icon class="weui-icon-search_in-box" type="search" size="20" color="#d81e06"></icon>
+			<input type="text" class="weui-search-bar__input" placeholder="品牌-车型-年份" value="{{searchValue}}" bindinput='searchValueInput' bindconfirm="searchConfirm" />
+			<view class="weui-icon-clear" wx:if="{{searchValue.length > 0}}" bindtap="searchClear">
+				<icon type="clear" size="14"></icon>
+			</view>
+		</view>
+	</view>
+</view>
+<scroll-view scroll-y class="indexes" scroll-into-view="indexes-{{listCurID}}" style="height:94vh" scroll-with-animation="true" enable-back-to-top="true">
+	<view class="cu-bar bg-white solid-bottom" style="border:1rpx solid #F2F2F2;" id="indexes-hot">
+		<text class="padding-left">热门品牌</text>
+	</view>
+	<view class="bg-white solid-bottom">
+		<view class="grid col-5 text-center" style="width:95%">
+			<view wx:for="{{hotCar}}" wx:for-index="index" wx:for-item="item" wx:key="unique">
+				<view class="padding" bindtap="showModal" data-target="viewModal" data-image="{{item.img}}" data-carname="{{item.name}}">
+					<image src="{{item.img}}" mode="widthFix"></image>
+					<view>{{item.name}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<block wx:for="{{carList}}" wx:for-index="index" wx:key wx:for-item="items" wx:key="unique">
+		<view class="padding indexItem-{{items.head}}" data-index="{{list[index]}}" id="indexes-{{items.head}}">
+			{{items.head}}
+		</view>
+		<view class="cu-list menu-avatar no-padding">
+			<view class="cu-item" wx:for="{{items.data}}" wx:key="unique" wx:for-index="sub" wx:for-item="cars" style="border:1rpx solid #F2F2F2" bindtap="showModal" data-target="viewModal" data-image="{{cars.img}}" data-carname="{{cars.name}}">
+				<view class="cu-avatar round lg" style="background-image:url({{cars.img}});"></view>
+				<view class="content padding-left">
+					<view class="text-black">
+						<text class="text-abc">{{cars.name}}</text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</block>
+</scroll-view>
+
+<view class="indexBar" style="height:90vh">
+	<view class="indexBar-box" bindtouchstart="tStart" bindtouchend="tEnd" catchtouchmove="tMove">
+		<view class="indexBar-item" id="hot" bindtouchstart="getCur" bindtouchend="setCur" bindtap="toHot">热</view>
+		<view class="indexBar-item" wx:for="{{list}}" wx:key="unique" id="{{index}}" bindtouchstart="getCur" bindtouchend="setCur">
+			{{list[index]}}
+		</view>
+	</view>
+</view>
+<!--点击时，显示当前字母-->
+<view hidden="{{hidden}}" class="indexToast">
+	{{listCur}}
+</view>
+
+<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="hideModal">
+	<text class="cuIcon-pullright text-red"></text>
+</view>
+<scroll-view scroll-y class="bg-white DrawerWindow {{modalName=='viewModal'?'show':''}}">
+	<view class="flex solid-bottom padding-left align-center" style="border-bottom:15rpx solid #F2F2F2">
+		<image src="{{carImg}}" mode="widthFix" style="width:15%"></image>
+		<view class="padding-sm margin-xs text-black radius">{{carname}}</view>
+	</view>
+	<view class="margin solid-bottom">
+		<text class="text-black padding-left">全车系</text>
+	</view>
+	<view style="background-color:#f2f2f2;height:1vh"></view>
+	<view class="cu-list menu-avatar">
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}" mode="date" fields="year" titleText="x1">
+			<view class="picker">
+				<view class="flex solid-bottom padding align-center" wx:for="{{baomaSeries}}" wx:for-index="index1" wx:key="unique" wx:for-item="cars">
+					<image src="{{cars.img}}" mode="widthFix" style="width:30%"></image>
+					<view class="padding-sm margin-xs text-black">{{cars.name}}</view>
+				</view>
+			</view>
+		</picker>
+	</view>
+</scroll-view>
+<!-- <view class="mypicker">
+<MyPicker  years="{{list}}" serises="{{carSerises}}}" showDialog='{{true}}'>
+</MyPicker>
+</view> -->
